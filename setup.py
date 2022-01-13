@@ -84,7 +84,7 @@ ext_modules = []
 # and
 # https://github.com/NVIDIA/apex/issues/456
 # https://github.com/pytorch/pytorch/commit/eb7b39e02f7d75c26d8a795ea8c7fd911334da7e#diff-4632522f237f1e4e728cb824300403ac
-version_dependent_macros = ['-DVERSION_GE_1_1', '-DVERSION_GE_1_3', 'DVERSION_GE_1_5']
+version_dependent_macros = ['-DVERSION_GE_1_1', '-DVERSION_GE_1_3', '-DVERSION_GE_1_5']
 
 if "--cuda_ext" in sys.argv:
     sys.argv.remove("--cuda_ext")
